@@ -1,0 +1,87 @@
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --verDarkDesaturated: hsl(229, 23%, 23%);
+  --darkGrayish: hsl(227, 10%, 46%);
+  --darkGray: hsl(0, 0%, 59%);
+}
+
+body {
+  background-color: var(--darkCyan);
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-position: -200px -400px, 900px 400px;
+  background-repeat: no-repeat;
+  background-size: auto, auto;
+  background-attachment: fixed, fixed;
+  display: flex;
+  height: 100vh;
+  font-size: 18px;
+}
+
+.card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  width: 300px;
+}
+
+.profile > img {
+  border: 5px solid #ffff;
+  border-radius: 50%;
+  margin-top: -30%;
+}
+
+.name-age {
+  margin-top: -30px;
+}
+
+.name-age h5,
+.name-age p {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.name-age p {
+  color: var(--darkGray);
+  font-weight: 200;
+}
+
+.city {
+  margin-top: -30px;
+  font-size: 0.8em;
+  color: var(--darkGray);
+}
+
+.card hr {
+  border: 1px solid #ecf0e9;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.engagement {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.engagement h5 {
+  margin-bottom: -5px;
+}
+
+.engagement span {
+  font-size: 0.5em;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-position: -700px -600px, 100px 400px;
+  }
+}
